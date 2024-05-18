@@ -20,6 +20,9 @@
   let selectedTeam = '';
   let teams = [];
 
+  /** @type {TextInput} */
+  let storyboardNameTextInput;
+
   function createStoryboard(e) {
     e.preventDefault();
     let endpoint = `${apiPrefix}/users/${$user.id}/storyboards`;
@@ -70,6 +73,9 @@
       router.route(appRoutes.register);
     }
     getTeams();
+
+    // Focus the storyboard name input field
+    storyboardNameTextInput.focus();
   });
 </script>
 
