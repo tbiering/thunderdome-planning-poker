@@ -91,6 +91,7 @@
       <TextInput
         name="storyboardName"
         bind:value="{storyboardName}"
+        bind:this="{storyboardNameTextInput}"
         placeholder="{$LL.storyboardNamePlaceholder()}"
         id="storyboardName"
         required
